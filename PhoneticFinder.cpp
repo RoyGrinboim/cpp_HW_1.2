@@ -76,7 +76,8 @@ namespace phonetic{
             }
         }       
         string s = "Did not find the word '" + word + "' in the text"; 
-        throw s;
+        //throw(s);
+        //cerr<<s<<endl;
         return s;
         
     } 
