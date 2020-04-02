@@ -52,7 +52,8 @@ namespace phonetic{
         text = text + ' ';
         if(text.length() == 0)
         {
-            return "no word";
+            throw "word length is 0";
+            return "";
         }
         for(int i = 0; i<text.length(); i++)
         {
@@ -69,7 +70,8 @@ namespace phonetic{
                 w = "";   
             }
         }
-        return "no word";
+        throw "no word found";
+        return "";
         
     } 
 }
