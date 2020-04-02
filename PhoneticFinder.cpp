@@ -52,6 +52,11 @@ namespace phonetic{
         text = text + ' ';
         if(text.length() == 0)
         {
+            throw "text length is 0";
+            return "";
+        }
+        if(word.length() == 0)
+        {
             throw "word length is 0";
             return "";
         }
