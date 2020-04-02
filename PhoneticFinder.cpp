@@ -49,7 +49,6 @@ namespace phonetic{
     std::string find(std::string text, std::string word)
     {
         string w = "";
-        text = text + ' ';
         if(text.length() == 0)
         {
             throw "text length is 0";
@@ -60,6 +59,7 @@ namespace phonetic{
             throw "word length is 0";
             return "";
         }
+        text = text + ' ';
         for(int i = 0; i<text.length(); i++)
         {
             if(text[i] != ' ')
