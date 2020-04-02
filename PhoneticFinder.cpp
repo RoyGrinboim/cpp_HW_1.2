@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 namespace phonetic{
     bool check_equal(string w, string word)
     {
@@ -76,7 +77,7 @@ namespace phonetic{
             }
         }       
         string s = "Did not find the word '" + word + "' in the text"; 
-        throw(s);
+        throw std::invalid_argument(s);
         //cerr<<s<<endl;
         return s;
         
