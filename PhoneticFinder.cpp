@@ -1,5 +1,6 @@
 #include "PhoneticFinder.hpp"
 #include <iostream>
+#include <stdexcept>
 
 
 using namespace std;
@@ -49,15 +50,14 @@ namespace phonetic{
     std::string find(std::string text, std::string word)
     {
         string w = "";
+        //exception& ex;
         if(text.length() == 0)
         {
             throw "text length is 0";
-            return "";
         }
         if(word.length() == 0)
         {
             throw "word length is 0";
-            return "";
         }
         text = text + ' ';
         for(int i = 0; i<text.length(); i++)
@@ -68,15 +68,16 @@ namespace phonetic{
             }
             else
             {
-                if(check_equal(w, word))
+                if(check_equal(w, word) && w != "")
                 {
                     return w;
                 }
                 w = "";   
             }
-        }
-        throw "no word found";
-        return "";
+        }       
+        string s = "Did not find the word '" + word + "' in the text"; 
+        throw s;
+        return s;
         
     } 
 }
