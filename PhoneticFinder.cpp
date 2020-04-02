@@ -19,7 +19,7 @@ namespace phonetic{
             {
                 if((word[i] != 'P' && word[i] != 'p' && word[i] != 'F' && word[i] != 'f' && word[i] != 'B' && word[i] != 'b') || (w[i] != 'P' && w[i] != 'p' && w[i] != 'F' && w[i] != 'f' && w[i] != 'B' && w[i] != 'b'))
                 {
-                    if((word[i] != 'g' && word[i] != 'G' && word[i] != 'j' && word[i] != 'J') || (w[i] != 'G' && w[i] != 'g' && w[i] != 'J' && w[i] != 'J'))
+                    if((word[i] != 'g' && word[i] != 'G' && word[i] != 'j' && word[i] != 'J') || (w[i] != 'G' && w[i] != 'g' && w[i] != 'j' && w[i] != 'J'))
                     {
                         if((word[i] != 'c' && word[i] != 'C' && word[i] != 'k' && word[i] != 'K' && word[i] != 'q' && word[i] != 'Q') || (w[i] != 'c' && w[i] != 'C' && w[i] != 'k' && w[i] != 'K' && w[i] != 'q' && w[i] != 'Q'))
                         {
