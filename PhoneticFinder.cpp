@@ -50,15 +50,15 @@ namespace phonetic{
 
     std::string find(std::string text, std::string word)
     {
+        string s = "Did not find the word '" + word + "' in the text";
         string w = "";
-        //exception& ex;
         if(text.length() == 0)
         {
-            throw "text length is 0";
+            throw std::invalid_argument(s);
         }
         if(word.length() == 0)
         {
-            throw "word length is 0";
+            throw std::invalid_argument(s);
         }
         text = text + ' ';
         for(int i = 0; i<text.length(); i++)
@@ -75,10 +75,8 @@ namespace phonetic{
                 }
                 w = "";   
             }
-        }       
-        string s = "Did not find the word '" + word + "' in the text"; 
+        }        
         throw std::invalid_argument(s);
-        //cerr<<s<<endl;
         return s;
         
     } 
