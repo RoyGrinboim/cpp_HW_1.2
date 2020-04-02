@@ -32,7 +32,7 @@ namespace phonetic{
                                         if((word[i] != 'i' && word[i] != 'I' && word[i] != 'y' && word[i] != 'Y') || (w[i] != 'i' && w[i] != 'I' && w[i] != 'y' && w[i] != 'Y'))
                                         {
 
-                                            if(w[i] != word[i] && w[i] != (word[i]-37) && w[i] != (word[i]+37))
+                                            if(w[i] != word[i] && w[i] != (word[i]-32) && w[i] != (word[i]+32))
                                             {
                                                 return false;
                                             }
